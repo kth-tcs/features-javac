@@ -25,7 +25,11 @@ JDK 1.10+
 ```
 
 #### Examples:
-The generated [graph]()
+The generated [graph](https://github.com/kth-tcs/features-javac/blob/master/examples/example1.java.png) and the [feature nodes](https://github.com/kth-tcs/features-javac/blob/master/examples/example1.feature.node.txt)
 ```
 public class Test {}
 ```
+
+
+
+The generated [graph](https://github.com/kth-tcs/features-javac/blob/master/examples/HANOI.java.png) and the [feature nodes]() of [HANOI.java]() from QuixBugs.
