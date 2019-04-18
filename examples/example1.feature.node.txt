@@ -1,0 +1,315 @@
+isDirected: true, allowsParallelEdges: true, allowsSelfLoops: true, nodes: [id: 0
+type: AST_ELEMENT
+contents: "COMPILATION_UNIT"
+startPosition: 0
+endPosition: 21
+startLineNumber: 1
+endLineNumber: 2
+, id: 1
+type: FAKE_AST
+contents: "TYPE_DECLS"
+startPosition: 0
+endPosition: 21
+startLineNumber: 1
+endLineNumber: 2
+, id: 2
+type: AST_ELEMENT
+contents: "CLASS"
+startPosition: 0
+endPosition: 21
+startLineNumber: 1
+endLineNumber: 2
+, id: 3
+type: FAKE_AST
+contents: "MODIFIERS"
+startPosition: 0
+endPosition: 6
+startLineNumber: 1
+endLineNumber: 1
+, id: 4
+type: AST_ELEMENT
+contents: "MODIFIERS"
+startPosition: 0
+endPosition: 6
+startLineNumber: 1
+endLineNumber: 1
+, id: 5
+type: TOKEN
+contents: "PUBLIC"
+startPosition: 0
+endPosition: 6
+startLineNumber: 1
+endLineNumber: 1
+, id: 6
+type: TOKEN
+contents: "CLASS"
+startPosition: 7
+endPosition: 12
+startLineNumber: 1
+endLineNumber: 1
+, id: 7
+type: IDENTIFIER_TOKEN
+contents: "Test"
+startPosition: 13
+endPosition: 17
+startLineNumber: 1
+endLineNumber: 1
+, id: 8
+type: TOKEN
+contents: "LBRACE"
+startPosition: 18
+endPosition: 19
+startLineNumber: 1
+endLineNumber: 1
+, id: 9
+type: TOKEN
+contents: "RBRACE"
+startPosition: 20
+endPosition: 21
+startLineNumber: 2
+endLineNumber: 2
+, id: 10
+type: SYMBOL_TYP
+contents: "Test"
+startPosition: -1
+endPosition: -1
+startLineNumber: 0
+endLineNumber: 0
+], edges: {sourceId: 0
+destinationId: 1
+type: AST_CHILD
+=<id: 0
+type: AST_ELEMENT
+contents: "COMPILATION_UNIT"
+startPosition: 0
+endPosition: 21
+startLineNumber: 1
+endLineNumber: 2
+ -> id: 1
+type: FAKE_AST
+contents: "TYPE_DECLS"
+startPosition: 0
+endPosition: 21
+startLineNumber: 1
+endLineNumber: 2
+>, sourceId: 1
+destinationId: 2
+type: AST_CHILD
+=<id: 1
+type: FAKE_AST
+contents: "TYPE_DECLS"
+startPosition: 0
+endPosition: 21
+startLineNumber: 1
+endLineNumber: 2
+ -> id: 2
+type: AST_ELEMENT
+contents: "CLASS"
+startPosition: 0
+endPosition: 21
+startLineNumber: 1
+endLineNumber: 2
+>, sourceId: 2
+destinationId: 3
+type: AST_CHILD
+=<id: 2
+type: AST_ELEMENT
+contents: "CLASS"
+startPosition: 0
+endPosition: 21
+startLineNumber: 1
+endLineNumber: 2
+ -> id: 3
+type: FAKE_AST
+contents: "MODIFIERS"
+startPosition: 0
+endPosition: 6
+startLineNumber: 1
+endLineNumber: 1
+>, sourceId: 3
+destinationId: 4
+type: AST_CHILD
+=<id: 3
+type: FAKE_AST
+contents: "MODIFIERS"
+startPosition: 0
+endPosition: 6
+startLineNumber: 1
+endLineNumber: 1
+ -> id: 4
+type: AST_ELEMENT
+contents: "MODIFIERS"
+startPosition: 0
+endPosition: 6
+startLineNumber: 1
+endLineNumber: 1
+>, sourceId: 5
+destinationId: 6
+type: NEXT_TOKEN
+=<id: 5
+type: TOKEN
+contents: "PUBLIC"
+startPosition: 0
+endPosition: 6
+startLineNumber: 1
+endLineNumber: 1
+ -> id: 6
+type: TOKEN
+contents: "CLASS"
+startPosition: 7
+endPosition: 12
+startLineNumber: 1
+endLineNumber: 1
+>, sourceId: 6
+destinationId: 7
+type: NEXT_TOKEN
+=<id: 6
+type: TOKEN
+contents: "CLASS"
+startPosition: 7
+endPosition: 12
+startLineNumber: 1
+endLineNumber: 1
+ -> id: 7
+type: IDENTIFIER_TOKEN
+contents: "Test"
+startPosition: 13
+endPosition: 17
+startLineNumber: 1
+endLineNumber: 1
+>, sourceId: 7
+destinationId: 8
+type: NEXT_TOKEN
+=<id: 7
+type: IDENTIFIER_TOKEN
+contents: "Test"
+startPosition: 13
+endPosition: 17
+startLineNumber: 1
+endLineNumber: 1
+ -> id: 8
+type: TOKEN
+contents: "LBRACE"
+startPosition: 18
+endPosition: 19
+startLineNumber: 1
+endLineNumber: 1
+>, sourceId: 8
+destinationId: 9
+type: NEXT_TOKEN
+=<id: 8
+type: TOKEN
+contents: "LBRACE"
+startPosition: 18
+endPosition: 19
+startLineNumber: 1
+endLineNumber: 1
+ -> id: 9
+type: TOKEN
+contents: "RBRACE"
+startPosition: 20
+endPosition: 21
+startLineNumber: 2
+endLineNumber: 2
+>, sourceId: 4
+destinationId: 5
+type: ASSOCIATED_TOKEN
+=<id: 4
+type: AST_ELEMENT
+contents: "MODIFIERS"
+startPosition: 0
+endPosition: 6
+startLineNumber: 1
+endLineNumber: 1
+ -> id: 5
+type: TOKEN
+contents: "PUBLIC"
+startPosition: 0
+endPosition: 6
+startLineNumber: 1
+endLineNumber: 1
+>, sourceId: 0
+destinationId: 6
+type: ASSOCIATED_TOKEN
+=<id: 0
+type: AST_ELEMENT
+contents: "COMPILATION_UNIT"
+startPosition: 0
+endPosition: 21
+startLineNumber: 1
+endLineNumber: 2
+ -> id: 6
+type: TOKEN
+contents: "CLASS"
+startPosition: 7
+endPosition: 12
+startLineNumber: 1
+endLineNumber: 1
+>, sourceId: 0
+destinationId: 7
+type: ASSOCIATED_TOKEN
+=<id: 0
+type: AST_ELEMENT
+contents: "COMPILATION_UNIT"
+startPosition: 0
+endPosition: 21
+startLineNumber: 1
+endLineNumber: 2
+ -> id: 7
+type: IDENTIFIER_TOKEN
+contents: "Test"
+startPosition: 13
+endPosition: 17
+startLineNumber: 1
+endLineNumber: 1
+>, sourceId: 0
+destinationId: 8
+type: ASSOCIATED_TOKEN
+=<id: 0
+type: AST_ELEMENT
+contents: "COMPILATION_UNIT"
+startPosition: 0
+endPosition: 21
+startLineNumber: 1
+endLineNumber: 2
+ -> id: 8
+type: TOKEN
+contents: "LBRACE"
+startPosition: 18
+endPosition: 19
+startLineNumber: 1
+endLineNumber: 1
+>, sourceId: 0
+destinationId: 9
+type: ASSOCIATED_TOKEN
+=<id: 0
+type: AST_ELEMENT
+contents: "COMPILATION_UNIT"
+startPosition: 0
+endPosition: 21
+startLineNumber: 1
+endLineNumber: 2
+ -> id: 9
+type: TOKEN
+contents: "RBRACE"
+startPosition: 20
+endPosition: 21
+startLineNumber: 2
+endLineNumber: 2
+>, sourceId: 10
+destinationId: 2
+type: ASSOCIATED_SYMBOL
+=<id: 10
+type: SYMBOL_TYP
+contents: "Test"
+startPosition: -1
+endPosition: -1
+startLineNumber: 0
+endLineNumber: 0
+ -> id: 2
+type: AST_ELEMENT
+contents: "CLASS"
+startPosition: 0
+endPosition: 21
+startLineNumber: 1
+endLineNumber: 2
